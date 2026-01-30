@@ -160,6 +160,15 @@ export const DataClumpsGraph : FunctionComponent<DataClumpsGraphProps> = (props:
         let nodes: any[] = [];
         let edges: any[] = [];
 
+        const openArrowEdge = {
+            arrows: {
+                to: {
+                    enabled: true,
+                    type: "vee",
+                }
+            }
+        };
+
         let graph = {
             nodes: nodes,
             edges: edges
@@ -178,6 +187,7 @@ export const DataClumpsGraph : FunctionComponent<DataClumpsGraphProps> = (props:
                     from: file_dict_value.id,
                     // @ts-ignore
                     to: classes_or_interfaces_ids_key,
+                    ...openArrowEdge,
                 });
             }
         }
@@ -195,6 +205,7 @@ export const DataClumpsGraph : FunctionComponent<DataClumpsGraphProps> = (props:
                     from: class_dict_value.id,
                     // @ts-ignore
                     to: field_ids_key,
+                    ...openArrowEdge,
                 });
             }
 
@@ -206,6 +217,7 @@ export const DataClumpsGraph : FunctionComponent<DataClumpsGraphProps> = (props:
                     from: class_dict_value.id,
                     // @ts-ignore
                     to: method_ids_key,
+                    ...openArrowEdge,
                 });
             }
         }
@@ -241,6 +253,7 @@ export const DataClumpsGraph : FunctionComponent<DataClumpsGraphProps> = (props:
                     from: method_dict_value.id,
                     // @ts-ignore
                     to: parameter_ids_key,
+                    ...openArrowEdge,
                 });
             }
         }
@@ -514,6 +527,12 @@ export const DataClumpsGraph : FunctionComponent<DataClumpsGraphProps> = (props:
             },
             edges: {
                 color: edgesColor
+            },
+            nodes: {
+                shape: "box",
+                shapeProperties: {
+                    borderRadius: 8,
+                },
             },
         };
 
