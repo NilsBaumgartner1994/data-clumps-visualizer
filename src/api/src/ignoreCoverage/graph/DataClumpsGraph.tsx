@@ -160,11 +160,18 @@ export const DataClumpsGraph : FunctionComponent<DataClumpsGraphProps> = (props:
         let nodes: any[] = [];
         let edges: any[] = [];
 
+        const hollowArrowSvg = `data:image/svg+xml;utf8,${encodeURIComponent(
+            "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"10\" viewBox=\"0 0 12 10\" fill=\"none\" stroke=\"#848484\" stroke-width=\"1.5\" stroke-linejoin=\"miter\"><polygon points=\"6,0 12,10 0,10\"/></svg>"
+        )}`;
+
         const openArrowEdge = {
             arrows: {
                 to: {
                     enabled: true,
-                    type: "vee",
+                    type: "image",
+                    src: hollowArrowSvg,
+                    imageWidth: 12,
+                    imageHeight: 10,
                 }
             }
         };
