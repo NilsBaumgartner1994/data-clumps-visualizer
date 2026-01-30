@@ -30,7 +30,7 @@ A library to visualize data clumps which is used in [data-clumps](https://github
 ## Live
 Here you can upload and explore your own projects which are parsed by npm [data-clumps](https://fireboltcasters.github.io/data-clumps/):
 
-https://fireboltcasters.github.io/data-clumps-visualizer/
+[https://fireboltcasters.github.io/data-clumps-visualizer/](https://nilsbaumgartner1994.github.io/data-clumps-visualizer/)
 
 ## Demo
 
