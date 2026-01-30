@@ -30,12 +30,12 @@ A library to visualize data clumps which is used in [data-clumps](https://github
 ## Live
 Here you can upload and explore your own projects which are parsed by npm [data-clumps](https://fireboltcasters.github.io/data-clumps/):
 
-[https://fireboltcasters.github.io/data-clumps-visualizer/](https://nilsbaumgartner1994.github.io/data-clumps-visualizer/)
+[https://nilsbaumgartner1994.github.io/data-clumps-visualizer/](https://nilsbaumgartner1994.github.io/data-clumps-visualizer/)
 
 ## Demo
 
 1. Download a data clumps report. Example: https://raw.githubusercontent.com/NilsBaumgartner1994/Data-Clumps-Dataset/main/Data/Projects/xerces2-j/tags/00a12ead688b1051ce5e9b8390257d53a161c056.json
-2. Open visualizer: https://fireboltcasters.github.io/data-clumps-visualizer
+2. Open visualizer: [https://fireboltcasters.github.io/data-clumps-visualizer](https://nilsbaumgartner1994.github.io/data-clumps-visualizer/)
 3. Drag and drop the data clumps report
 
 <a href="https://fireboltcasters.github.io/data-clumps-visualizer/">
